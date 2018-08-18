@@ -1,8 +1,11 @@
 {
-    "name" : "node-red-contrib-fully-tts",
-    "node-red" : {
-        "nodes": {
-            "lower-case": "fully-tts.js"
-        }
+  "name": "node-red-contrib-fully-tts",
+  "node-red": {
+    "nodes": {
+      "lower-case": "fully-tts.js"
     }
+  },
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
