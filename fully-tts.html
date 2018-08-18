@@ -1,0 +1,28 @@
+<script type="text/javascript">
+    RED.nodes.registerType('fully-tts',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:0,
+        icon: "file.png",
+        label: function() {
+            return this.name||"fully-tts";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="fully-tts">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Host</label>
+        <input type="text" id="node-input-host" placeholder="127.0.0.1">
+        <label for="node-input-name"><i class="icon-tag"></i> Text</label>
+        <input type="text" id="node-input-text" placeholder="Hi there!">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="fully-tts">
+    <p>A node to have text read aloud in a Fully instance.</p>
+</script>
