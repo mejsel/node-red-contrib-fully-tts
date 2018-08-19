@@ -1,15 +1,16 @@
 <script type="text/javascript">
     RED.nodes.registerType('fully-tts',{
         category: 'function',
-        color: '#a6bbcf',
+        color: '#FFAAAA',
         defaults: {
-            name: {value:""}
+            host: {value: "127.0.0.1"},
+            password: {value: ""}
         },
         inputs:1,
         outputs:0,
-        icon: "file.png",
+        icon: "alert.png",
         label: function() {
-            return this.name||"fully-tts";
+            return this.name||"fully tts";
         }
     });
 </script>
@@ -18,8 +19,8 @@
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Host</label>
         <input type="text" id="node-input-host" placeholder="127.0.0.1">
-        <label for="node-input-name"><i class="icon-tag"></i> Text</label>
-        <input type="text" id="node-input-text" placeholder="Hi there!">
+        <label for="node-input-name"><i class="icon-tag"></i> Password</label>
+        <input type="text" id="node-input-password" placeholder="">
     </div>
 </script>
 
